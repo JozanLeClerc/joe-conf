@@ -1,0 +1,66 @@
+#
+# cgit config
+#
+
+css=/cgit.css
+logo=/cgit.png
+
+favicon=/favicon.png
+
+# if you do not want that webcrawler (like google) index your site
+robots=noindex, nofollow
+
+# if cgit messes up links, use a virtual-root. For example, cgit.example.org/ has this value:
+virtual-root=/
+
+root-title=GitJoe
+root-desc=where the good code belongs
+
+clone-url=git://gitjoe.xyz/$CGIT_REPO_URL jozan@gitjoe.xyz:$CGIT_REPO_URL
+
+enable-index-owner=0
+enable-index-links=0
+enable-log-filecount=1
+enable-log-linecount=1
+enable-commit-graph=1
+enable-remote-branches=1
+
+snapshots=tar.gz tar.bz tar.xz
+max-stats=quarter
+#root-readme=/usr/local/www/cgit/about.htm
+#root-readme=/usr/home/git/repos/about
+
+enable-index-owner=1
+
+readme=:README.md
+readme=:readme.md
+readme=:README.mkd
+readme=:readme.mkd
+readme=:README.rst
+readme=:readme.rst
+readme=:README.html
+readme=:readme.html
+readme=:README.htm
+readme=:readme.htm
+readme=:README.txt
+readme=:readme.txt
+readme=:README
+readme=:readme
+readme=:INSTALL.md
+readme=:install.md
+readme=:INSTALL.mkd
+readme=:install.mkd
+readme=:INSTALL.rst
+readme=:install.rst
+readme=:INSTALL.html
+readme=:install.html
+readme=:INSTALL.htm
+readme=:install.htm
+readme=:INSTALL.txt
+readme=:install.txt
+readme=:INSTALL
+readme=:install
+
+#scan-path=/usr/local/git/jozan
+#scan-path=/usr/local/git/salad
+#include=/usr/local/etc/cgitrepos/jozan
