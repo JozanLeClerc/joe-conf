@@ -16,22 +16,28 @@ virtual-root=/
 root-title=GitJoe
 root-desc=where the good code belongs
 
-clone-url=git://gitjoe.xyz/$CGIT_REPO_URL jozan@gitjoe.xyz:$CGIT_REPO_URL
+clone-url=git://gitjoe.xyz/$CGIT_REPO_URL
 
-enable-index-owner=0
+enable-index-owner=1
 enable-index-links=0
 enable-log-filecount=1
 enable-log-linecount=1
 enable-commit-graph=1
 enable-remote-branches=1
 
+strict-export=git-daemon-export-ok
+remove-suffix=1
+
+about-filter=pandoc
+source-filter=/usr/local/lib/cgit/filters/syntax-highlighting-edited.sh
+
 snapshots=tar.gz tar.bz tar.xz
-max-stats=quarter
+max-stats=year
 #root-readme=/usr/local/www/cgit/about.htm
 #root-readme=/usr/home/git/repos/about
 
-enable-index-owner=1
-
+readme=:README.org
+readme=:readme.org
 readme=:README.md
 readme=:readme.md
 readme=:README.mkd
@@ -46,6 +52,8 @@ readme=:README.txt
 readme=:readme.txt
 readme=:README
 readme=:readme
+readme=:INSTALL.org
+readme=:install.org
 readme=:INSTALL.md
 readme=:install.md
 readme=:INSTALL.mkd
@@ -61,6 +69,9 @@ readme=:install.txt
 readme=:INSTALL
 readme=:install
 
-#scan-path=/usr/local/git/jozan
-#scan-path=/usr/local/git/salad
-#include=/usr/local/etc/cgitrepos/jozan
+section=jozan
+scan-path=/usr/local/git/jozan
+section=salad
+scan-path=/usr/local/git/salad
+section=salad-joe
+scan-path=/usr/local/git/salad-joe
