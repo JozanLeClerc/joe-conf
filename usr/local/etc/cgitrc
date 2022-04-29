@@ -15,20 +15,37 @@ virtual-root=/
 
 root-title=GitJoe
 root-desc=where the good code belongs
+footer=/usr/local/www/cgit/footer.html
 
 clone-url=git://gitjoe.xyz/$CGIT_REPO_URL
 
-enable-index-owner=1
+enable-blame=0
+enable-commit-graph=1
+enable-filter-overrides=1
+enable-follow-links=1
+enable-git-config=0
+enable-http-clone=0
+enable-http-serving=0
 enable-index-links=0
+enable-index-owner=0
 enable-log-filecount=1
 enable-log-linecount=1
-enable-commit-graph=1
 enable-remote-branches=1
+enable-subject-links=1
+enable-tree-linenumbers=1
 
+branch-sort=age
+repository-sort=name
+local-time=0
 strict-export=git-daemon-export-ok
 remove-suffix=1
+side-by-side-diffs=1
+section-sort=1
+section-from-path=1
 
-about-filter=pandoc
+cache-size=0
+
+about-filter=/usr/local/lib/cgit/filters/about-formatting-edited.sh
 source-filter=/usr/local/lib/cgit/filters/syntax-highlighting-edited.sh
 
 snapshots=tar.gz tar.bz tar.xz
@@ -36,10 +53,10 @@ max-stats=year
 #root-readme=/usr/local/www/cgit/about.htm
 #root-readme=/usr/home/git/repos/about
 
-readme=:README.org
-readme=:readme.org
 readme=:README.md
 readme=:readme.md
+readme=:README.org
+readme=:readme.org
 readme=:README.mkd
 readme=:readme.mkd
 readme=:README.rst
@@ -52,10 +69,10 @@ readme=:README.txt
 readme=:readme.txt
 readme=:README
 readme=:readme
-readme=:INSTALL.org
-readme=:install.org
 readme=:INSTALL.md
 readme=:install.md
+readme=:INSTALL.org
+readme=:install.org
 readme=:INSTALL.mkd
 readme=:install.mkd
 readme=:INSTALL.rst
@@ -69,9 +86,4 @@ readme=:install.txt
 readme=:INSTALL
 readme=:install
 
-section=jozan
-scan-path=/usr/local/git/jozan
-section=salad
-scan-path=/usr/local/git/salad
-section=salad-joe
-scan-path=/usr/local/git/salad-joe
+scan-path=/usr/local/git
