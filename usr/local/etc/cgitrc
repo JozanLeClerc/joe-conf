@@ -2,19 +2,19 @@
 # cgit config
 #
 
-css=/cgit.css
-logo=/cgit.png
-
-favicon=/favicon.png
+css=/css/cgit.css
+logo=/img/cgit.png
+favicon=/img/favicon.ico
 
 # if you do not want that webcrawler (like google) index your site
-robots=noindex, nofollow
+robots=index, nofollow
 
 # if cgit messes up links, use a virtual-root. For example, cgit.example.org/ has this value:
 virtual-root=/
 
 root-title=GitJoe
 root-desc=where the good code belongs
+root-readme=/usr/local/www/cgit/about.html
 footer=/usr/local/www/cgit/footer.html
 
 clone-url=git://gitjoe.xyz/$CGIT_REPO_URL
@@ -86,4 +86,4 @@ readme=:install.txt
 readme=:INSTALL
 readme=:install
 
-scan-path=/usr/local/git
+#scan-path=/usr/local/git
