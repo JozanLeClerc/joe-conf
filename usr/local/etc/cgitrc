@@ -14,8 +14,8 @@ virtual-root=/
 
 root-title=GitJoe
 root-desc=where the good code belongs
-root-readme=/usr/local/www/cgit/about.html
-footer=/usr/local/www/cgit/footer.html
+root-readme=/usr/local/www/gitjoe/about.html
+footer=/usr/local/www/gitjoe/footer.html
 
 clone-url=git://gitjoe.xyz/$CGIT_REPO_URL
 
@@ -50,8 +50,6 @@ source-filter=/usr/local/lib/cgit/filters/syntax-highlighting-edited.sh
 
 snapshots=tar.gz tar.bz tar.xz
 max-stats=year
-#root-readme=/usr/local/www/cgit/about.htm
-#root-readme=/usr/home/git/repos/about
 
 readme=:README.md
 readme=:readme.md
@@ -82,4 +80,4 @@ readme=:install.txt
 readme=:INSTALL
 readme=:install
 
-scan-path=/usr/local/git
+#scan-path=/usr/local/git
