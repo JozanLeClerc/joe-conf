@@ -39,7 +39,7 @@ repository-sort=name
 local-time=0
 strict-export=git-daemon-export-ok
 remove-suffix=1
-side-by-side-diffs=1
+side-by-side-diffs=0
 section-sort=1
 section-from-path=1
 
