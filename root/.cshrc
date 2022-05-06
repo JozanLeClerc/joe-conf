@@ -16,7 +16,7 @@ alias tree	tree -C
 alias c		clear
 alias vim	nvim
 alias diff	colordiff -c
-alias confgit	git --git-dir=/usr/local/git/jozan/jozanofastora-conf.git --work-tree=/
+alias confgit	git --git-dir=/usr/local/git/jozan/joe-conf.git --work-tree=/
 
 # A righteous umask
 umask 22
