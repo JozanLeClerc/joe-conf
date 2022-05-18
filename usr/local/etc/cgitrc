@@ -48,7 +48,7 @@ cache-size=0
 about-filter=/usr/local/lib/cgit/filters/about-formatting-edited.sh
 source-filter=/usr/local/lib/cgit/filters/syntax-highlighting-edited.sh
 
-snapshots=tar.gz tar.bz tar.xz
+snapshots=tar.gz tar.bz2 tar.xz zip
 max-stats=year
 
 readme=:README.md
