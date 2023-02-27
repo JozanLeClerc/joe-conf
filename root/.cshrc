@@ -15,8 +15,8 @@ alias ls	ls -lhG
 alias tree	tree -C
 alias c		clear
 alias vim	nvim
-alias diff	colordiff -c
-alias confgit	git --git-dir=/usr/local/git/jozan/joe-conf.git --work-tree=/
+alias confgit	git --git-dir=/var/jail/git/var/git/jozan/joe-conf.git --work-tree=/
+alias jx	jexec
 
 # A righteous umask
 umask 22
