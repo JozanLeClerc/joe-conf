@@ -12,6 +12,7 @@ alias la	ls -aF
 alias lf	ls -FA
 alias ll	ls -lAF
 alias ls	ls -lhG
+alias less	less -R -c -S
 alias tree	tree -C
 alias c		clear
 alias vim	nvim
